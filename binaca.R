@@ -14,9 +14,12 @@ songlist = read_html("http://www.hindigeetmala.net/binaca_geetmala_1958.htm") # 
 Text1 = songlist %>%
   html_nodes(".w185") %>% html_text()  # Put a comma between elements
 
+Text1
+
 Text2 = songlist %>%
   html_nodes(".w105") %>% html_text()
 
+Text2
 
 xpath ='//*[@id="c1"]/table[2]/tbody/tr/td[4]/table[4]/tbody/tr/td[2]/table[1]/tbody/tr/td/table[4]'
 Tablenu = songlist %>%
